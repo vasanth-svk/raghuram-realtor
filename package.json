@@ -1,0 +1,13 @@
+{
+  "name": "raghuram-realtor-lead-form",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Raghuram Realtor lead form with a Zoho Forms relay and a custom thank-you page.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
