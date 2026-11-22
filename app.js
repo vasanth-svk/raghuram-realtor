@@ -1,6 +1,10 @@
 (() => {
   'use strict';
 
+  // Vercel bundles this browser script into its Node function wrapper.
+  // Skip DOM work when there is no document (server-side execution).
+  if (typeof document === 'undefined') return;
+
   const form = document.getElementById('realtor-form');
   if (!form) return;
 
