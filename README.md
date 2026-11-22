@@ -51,7 +51,7 @@ The relay uses the same public endpoint and payload as Zoho's own hosted form. I
 
 This project now deploys on Vercel without changing `server.js`:
 
-- `api/index.js` adapts the existing Node request handler to a Vercel Function.
+- `api/index.mjs` adapts the existing Node request handler to a Vercel Web Handler function.
 - `vercel.json` routes every request through that function and includes the static assets.
 - The Zoho relay in `server.js` is unchanged.
 
