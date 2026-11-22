@@ -47,6 +47,18 @@ The relay uses the same public endpoint and payload as Zoho's own hosted form. I
 
 ## Deploy it
 
+### Vercel
+
+This project now deploys on Vercel without changing `server.js`:
+
+- `api/index.js` adapts the existing Node request handler to a Vercel Function.
+- `vercel.json` routes every request through that function and includes the static assets.
+- The Zoho relay in `server.js` is unchanged.
+
+Deploy with `vercel --prod`, or push these files to the Git repository connected to the Vercel project. If you set any `ZOHO_RECORDS_URL` environment variable in Vercel, keep it pointing at the same working Zoho Forms endpoint.
+
+### Other Node hosts
+
 The project needs a host that can run Node.js. Free/cheap options:
 
 - **Render** — create a Web Service, point it at this repo, build command `npm install`, start command `npm start`.

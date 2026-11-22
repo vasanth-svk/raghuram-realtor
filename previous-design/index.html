@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Raghuram Realtor | Tell me about your move</title>
+  <meta name="description" content="Share your real estate goals with Raghuram Puranam. Buying, selling, leasing, or investing across the Greater Toronto Area." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#lead-form">Skip to the form</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">RP</span>
+        <span class="brand-text">
+          <strong>Raghuram Puranam</strong>
+          <small>REALTOR&reg; &middot; Greater Toronto Area</small>
+        </span>
+      </a>
+      <p class="header-note"><span class="status-dot" aria-hidden="true"></span> Taking on new clients</p>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="wrap layout">
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">Buy &middot; Sell &middot; Lease &middot; Invest</p>
+        <h1 id="page-title">Let&rsquo;s find your<br /><em>next address.</em></h1>
+        <p class="lede">
+          Tell me a little about what you&rsquo;re planning. I&rsquo;ll come back to you with clear next steps &mdash;
+          no pressure, no spam, and no obligation.
+        </p>
+
+        <ul class="trust-list">
+          <li>
+            <span class="trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5" /><path d="M5 9.5V21h14V9.5" /><path d="M9.5 21v-6h5v6" /></svg>
+            </span>
+            <span><strong>Local GTA knowledge</strong><small>Scarborough to Oshawa, and everywhere in between.</small></span>
+          </li>
+          <li>
+            <span class="trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18" /><path d="M5 7h9a4 4 0 0 1 0 8H8" /><path d="M5 15h6" /></svg>
+            </span>
+            <span><strong>Straight answers</strong><small>Honest guidance on timing, pricing, and next steps.</small></span>
+          </li>
+          <li>
+            <span class="trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3.5 2" /></svg>
+            </span>
+            <span><strong>Your timeline</strong><small>Whether it&rsquo;s this month or next year, I&rsquo;ll meet you where you are.</small></span>
+          </li>
+        </ul>
+
+        <div class="intro-note">
+          <p>&ldquo;The best move is an informed one. My job is to make sure you have the full picture before you decide.&rdquo;</p>
+          <span>Raghuram Puranam</span>
+        </div>
+      </section>
+
+      <section class="form-shell" id="lead-form" aria-labelledby="form-title">
+        <div class="form-card">
+          <div class="form-head">
+            <p class="eyebrow">Your details</p>
+            <h2 id="form-title">Tell me about your move</h2>
+            <p>Fields marked <span class="req" aria-hidden="true">*</span> are required. Everything else helps me prepare.</p>
+          </div>
+
+          <form id="realtor-form" novalidate>
+            <fieldset class="form-section">
+              <legend class="section-title"><span>01</span> About you</legend>
+
+              <div class="grid two">
+                <div class="field">
+                  <label class="field-label" for="firstName">First name</label>
+                  <input class="input" id="firstName" name="firstName" type="text" autocomplete="given-name" maxlength="80" placeholder="First name" />
+                </div>
+                <div class="field">
+                  <label class="field-label" for="lastName">Last name</label>
+                  <input class="input" id="lastName" name="lastName" type="text" autocomplete="family-name" maxlength="80" placeholder="Last name" />
+                </div>
+              </div>
+
+              <div class="grid two">
+                <div class="field">
+                  <label class="field-label" for="phone">Phone</label>
+                  <input class="input" id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="30" placeholder="(416) 555-0100" />
+                  <p class="error" data-error-for="phone" hidden></p>
+                </div>
+                <div class="field">
+                  <label class="field-label" for="email">Email</label>
+                  <input class="input" id="email" name="email" type="email" autocomplete="email" inputmode="email" maxlength="120" placeholder="you@example.com" />
+                  <p class="error" data-error-for="email" hidden></p>
+                </div>
+              </div>
+
+              <div class="grid two">
+                <div class="field">
+                  <label class="field-label" for="contactMethod">Preferred contact method</label>
+                  <div class="select-wrap">
+                    <select class="input" id="contactMethod" name="contactMethod">
+                      <option value="">- Select -</option>
+                      <option value="Call">Call</option>
+                      <option value="Text">Text</option>
+                      <option value="WhatsApp">WhatsApp</option>
+                      <option value="Email">Email</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="field-label" for="bestTime">Best time to contact you</label>
+                  <div class="select-wrap">
+                    <select class="input" id="bestTime" name="bestTime">
+                      <option value="">- Select -</option>
+                      <option value="Morning">Morning</option>
+                      <option value="Afternoon">Afternoon</option>
+                      <option value="Evening">Evening</option>
+                      <option value="Anytime">Anytime</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-section">
+              <legend class="section-title"><span>02</span> Your search</legend>
+
+              <fieldset class="field choice-field" data-field="intent">
+                <legend class="field-label">What are you looking to do? <span class="req" aria-hidden="true">*</span></legend>
+                <div class="choice-grid">
+                  <label class="choice"><input type="checkbox" name="intent" value="Buy" /><span>Buy</span></label>
+                  <label class="choice"><input type="checkbox" name="intent" value="Sell" /><span>Sell</span></label>
+                  <label class="choice"><input type="checkbox" name="intent" value="Rent or lease" /><span>Rent or lease</span></label>
+                  <label class="choice"><input type="checkbox" name="intent" value="Invest" /><span>Invest</span></label>
+                  <label class="choice"><input type="checkbox" name="intent" value="Just exploring" /><span>Just exploring</span></label>
+                </div>
+                <p class="error" data-error-for="intent" hidden></p>
+              </fieldset>
+
+              <fieldset class="field choice-field" data-field="location">
+                <legend class="field-label">Preferred location or area <span class="req" aria-hidden="true">*</span></legend>
+                <div class="choice-grid">
+                  <label class="choice"><input type="checkbox" name="location" value="Scarborough" /><span>Scarborough</span></label>
+                  <label class="choice"><input type="checkbox" name="location" value="Toronto" /><span>Toronto</span></label>
+                  <label class="choice"><input type="checkbox" name="location" value="Pickering" /><span>Pickering</span></label>
+                  <label class="choice"><input type="checkbox" name="location" value="Ajax" /><span>Ajax</span></label>
+                  <label class="choice"><input type="checkbox" name="location" value="Whitby" /><span>Whitby</span></label>
+                  <label class="choice"><input type="checkbox" name="location" value="Oshawa" /><span>Oshawa</span></label>
+                  <label class="choice"><input type="checkbox" name="location" value="Markham" /><span>Markham</span></label>
+                  <label class="choice"><input type="checkbox" name="location" value="Other GTA area" /><span>Other GTA area</span></label>
+                </div>
+                <p class="error" data-error-for="location" hidden></p>
+              </fieldset>
+
+              <div class="field">
+                <label class="field-label" for="neighbourhood">Specific neighbourhood or postal code</label>
+                <input class="input" id="neighbourhood" name="neighbourhood" type="text" autocomplete="postal-code" maxlength="120" placeholder="e.g. Agincourt, M1B 1A1" />
+              </div>
+
+              <fieldset class="field choice-field" data-field="propertyType">
+                <legend class="field-label">Property type</legend>
+                <div class="choice-grid">
+                  <label class="choice"><input type="checkbox" name="propertyType" value="Detached" /><span>Detached</span></label>
+                  <label class="choice"><input type="checkbox" name="propertyType" value="Semi-detached" /><span>Semi-detached</span></label>
+                  <label class="choice"><input type="checkbox" name="propertyType" value="Townhouse" /><span>Townhouse</span></label>
+                  <label class="choice"><input type="checkbox" name="propertyType" value="Condo" /><span>Condo</span></label>
+                  <label class="choice"><input type="checkbox" name="propertyType" value="Bungalow" /><span>Bungalow</span></label>
+                  <label class="choice"><input type="checkbox" name="propertyType" value="Commercial" /><span>Commercial</span></label>
+                  <label class="choice"><input type="checkbox" name="propertyType" value="other" /><span>Other</span></label>
+                </div>
+              </fieldset>
+
+              <div class="grid two">
+                <div class="field">
+                  <label class="field-label" for="budget">Budget (CAD)</label>
+                  <div class="input-prefix">
+                    <span aria-hidden="true">CAD $</span>
+                    <input class="input" id="budget" name="budget" type="number" min="0" step="1000" inputmode="numeric" placeholder="750,000" />
+                  </div>
+                  <p class="error" data-error-for="budget" hidden></p>
+                </div>
+                <div class="field">
+                  <label class="field-label" for="timeline">When are you planning to move or decide?</label>
+                  <div class="select-wrap">
+                    <select class="input" id="timeline" name="timeline">
+                      <option value="">- Select -</option>
+                      <option value="Immediately">Immediately</option>
+                      <option value="1-3 months">1-3 months</option>
+                      <option value="3-6 months">3-6 months</option>
+                      <option value="6-12 months">6-12 months</option>
+                      <option value="just exploring">Just exploring</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="grid two">
+                <div class="field">
+                  <label class="field-label" for="bedrooms">Bedrooms needed</label>
+                  <div class="select-wrap">
+                    <select class="input" id="bedrooms" name="bedrooms">
+                      <option value="">- Select -</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5+">5+</option>
+                      <option value="Flexible">Flexible</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="field-label" for="bathrooms">Bathrooms needed</label>
+                  <div class="select-wrap">
+                    <select class="input" id="bathrooms" name="bathrooms">
+                      <option value="">- Select -</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5+">5+</option>
+                      <option value="Flexible">Flexible</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <fieldset class="field choice-field" data-field="requirements">
+                <legend class="field-label">Additional requirements</legend>
+                <div class="choice-grid">
+                  <label class="choice"><input type="checkbox" name="requirements" value="Parking" /><span>Parking</span></label>
+                  <label class="choice"><input type="checkbox" name="requirements" value="Garage" /><span>Garage</span></label>
+                  <label class="choice"><input type="checkbox" name="requirements" value="Finished basement" /><span>Finished basement</span></label>
+                  <label class="choice"><input type="checkbox" name="requirements" value="Rental potential" /><span>Rental potential</span></label>
+                  <label class="choice"><input type="checkbox" name="requirements" value="Schools" /><span>Schools</span></label>
+                  <label class="choice"><input type="checkbox" name="requirements" value="Transit" /><span>Transit</span></label>
+                  <label class="choice"><input type="checkbox" name="requirements" value="Parks" /><span>Parks</span></label>
+                  <label class="choice"><input type="checkbox" name="requirements" value="Others" /><span>Others</span></label>
+                </div>
+              </fieldset>
+
+              <div class="field">
+                <label class="field-label" for="notes">Anything else you would like me to know?</label>
+                <textarea class="input textarea" id="notes" name="notes" rows="4" maxlength="2000" placeholder="Your wish list, questions, or anything that matters to you."></textarea>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-section">
+              <legend class="section-title"><span>03</span> A little context</legend>
+
+              <div class="grid three">
+                <div class="field">
+                  <label class="field-label" for="agentStatus">Are you currently working with an agent?</label>
+                  <div class="select-wrap">
+                    <select class="input" id="agentStatus" name="agentStatus">
+                      <option value="">- Select -</option>
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
+                      <option value="Prefer to discuss">Prefer to discuss</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="field-label" for="mortgage">Have you been pre-approved for a mortgage?</label>
+                  <div class="select-wrap">
+                    <select class="input" id="mortgage" name="mortgage">
+                      <option value="">- Select -</option>
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
+                      <option value="Not applicable">Not applicable</option>
+                      <option value="I Would like assistance">I would like assistance</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="field-label" for="heardFrom">How did you hear about me?</label>
+                  <div class="select-wrap">
+                    <select class="input" id="heardFrom" name="heardFrom">
+                      <option value="">- Select -</option>
+                      <option value="Referral">Referral</option>
+                      <option value="Instagram">Instagram</option>
+                      <option value="WhatsApp">WhatsApp</option>
+                      <option value="Business card">Business card</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <div class="form-section consent-section">
+              <div class="consent-field" data-field="consent">
+                <label class="consent-row">
+                  <input type="checkbox" id="consent" name="consent" />
+                  <span class="check-box" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.2 4.2L19 7" /></svg>
+                  </span>
+                  <span class="consent-text">
+                    I agree to be contacted by Raghuram Puranam about my real estate inquiry using the contact details I provide.
+                    <span class="req" aria-hidden="true">*</span>
+                  </span>
+                </label>
+                <p class="error" data-error-for="consent" hidden></p>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn-submit" id="submit-btn" type="submit">
+                  <span class="btn-spinner" aria-hidden="true"></span>
+                  <span class="btn-label">Send my details</span>
+                  <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15" /><path d="m13 6 6 6-6 6" /></svg>
+                </button>
+
+                <div class="form-alert" id="form-alert" role="alert" hidden></div>
+
+                <p class="privacy">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2" /><path d="M8 10V7a4 4 0 0 1 8 0v3" /></svg>
+                  Your details are sent securely to Zoho Forms and are never shared or sold.
+                </p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>&copy; <span id="year">2026</span> Raghuram Puranam. All rights reserved.</p>
+      <p class="footer-small">Serving the Greater Toronto Area &middot; Buy &middot; Sell &middot; Lease &middot; Invest</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
