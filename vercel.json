@@ -1,10 +1,5 @@
 {
   "$schema": "openapi.vercel.sh/vercel.json",
-  "functions": {
-    "api/index.mjs": {
-      "includeFiles": "{index.html,thank-you.html,styles.css,app.js,thank-you.js,assets/**}"
-    }
-  },
   "rewrites": [
     { "source": "/(.*)", "destination": "/api/index" }
   ]
